@@ -7,13 +7,13 @@ from xstatic.pkg.jquery import JQuery as xs
 long_description = open('README.txt').read()
 
 
-setup(  # better now, though not all of these make sense outside of setup.py
+setup(
     name='XStatic-' + xs.display_name,
     version=xs.version,
     description=xs.description,
     long_description=long_description,
-    classifiers=xs.classifiers,  # for pypi
-    keywords=xs.keywords,  # for pypi
+    classifiers=xs.classifiers,
+    keywords=xs.keywords,
     author=xs.author,
     author_email=xs.author_email,
     license=xs.license,
