@@ -4,7 +4,14 @@ jQuery package
 
 from os.path import join, dirname
 
-from xstatic.main import XStatic
+try:
+    from xstatic.main import XStatic
+except ImportError:
+    class XStatic(object):
+        """
+        just a dummy for the time when setup.py is running and
+        for the case that xstatic is not already installed.
+        """
 
 class JQuery(XStatic):
     name = 'jquery' # short, all lowercase name
