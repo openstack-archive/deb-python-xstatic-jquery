@@ -16,7 +16,9 @@ except ImportError:
 class JQuery(XStatic):
     name = 'jquery' # short, all lowercase name
     display_name = 'jQuery' # official name, upper/lowercase allowed
-    version = '1.6.1' # for simplicity, use same version as bundled files
+    version = '1.6.1.1' # for simplicity, use same version x.y.z as bundled files
+                        # additionally we append .b for our build number, so we
+                        # can release new builds with fixes for xstatic stuff.
 
     base_dir = join(dirname(__file__), 'data')
     # linux package maintainers just can point to their file locations like this:
