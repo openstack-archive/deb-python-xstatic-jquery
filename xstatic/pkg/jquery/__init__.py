@@ -41,7 +41,7 @@ class JQuery(XStatic):
     homepage = 'http://jquery.com/'
 
     # this refers to all files:
-    license = '(same a %s)' % display_name
+    license = '(same as %s)' % display_name
 
     locations = {
         # if value is a string, it is a base location, just append relative
