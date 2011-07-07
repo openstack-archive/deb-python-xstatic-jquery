@@ -23,5 +23,5 @@ setup(
     namespace_packages=['xstatic', 'xstatic.pkg', ],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['XStatic'],  # this is just a MINIMAL support code package
+    install_requires=['XStatic==0.0.1'],  # this is just a MINIMAL support code package
 )

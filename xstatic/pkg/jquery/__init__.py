@@ -16,7 +16,7 @@ except ImportError:
 class JQuery(XStatic):
     name = 'jquery' # short, all lowercase name
     display_name = 'jQuery' # official name, upper/lowercase allowed
-    version = '1.6.1.2' # for simplicity, use same version x.y.z as bundled files
+    version = '1.6.1.3' # for simplicity, use same version x.y.z as bundled files
                         # additionally we append .b for our build number, so we
                         # can release new builds with fixes for xstatic stuff.
 
