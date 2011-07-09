@@ -1,27 +1,27 @@
-from setuptools import setup, find_packages
-
-from xstatic.pkg.jquery import JQuery as xs
+from xstatic.pkg import jquery as xs
 
 # The README.txt file should be written in reST so that PyPI can use
 # it to generate your project's PyPI page. 
 long_description = open('README.txt').read()
 
+from setuptools import setup, find_packages
 
 setup(
-    name='XStatic-' + xs.display_name,
-    version=xs.version,
-    description=xs.description,
+    name=xs.PACKAGE_NAME,
+    version=xs.PACKAGE_VERSION,
+    description=xs.DESCRIPTION,
     long_description=long_description,
-    classifiers=xs.classifiers,
-    keywords=xs.keywords,
-    author=xs.author,
-    author_email=xs.author_email,
-    license=xs.license,
-    url=xs.homepage,
-    platforms=xs.platforms,
+    classifiers=xs.CLASSIFIERS,
+    keywords=xs.KEYWORDS,
+    maintainer=xs.MAINTAINER,
+    maintainer_email=xs.MAINTAINER_EMAIL,
+    license=xs.LICENSE,
+    url=xs.HOMEPAGE,
+    platforms=xs.PLATFORMS,
     packages=find_packages(),
     namespace_packages=['xstatic', 'xstatic.pkg', ],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['XStatic==0.0.1'],  # this is just a MINIMAL support code package
+    install_requires=[],  # nothing! :)
+                          # if you like, you MAY use the 'XStatic' package.
 )
