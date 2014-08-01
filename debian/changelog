@@ -1,0 +1,5 @@
+python-xstatic-jquery (1.7.2.0+dfsg1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #756734)
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 28 Jun 2014 17:16:08 +0800

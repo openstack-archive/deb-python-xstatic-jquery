@@ -1,0 +1,30 @@
+Description: Do not query 3rd party sites
+ Original system from upstream allows the use of a 3rd party repository for the
+ javascript library. This clearly goes against the spirit of Debian, and
+ therefore, I'm cleaning the package from entries in the CDN dict.
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2014-08-01
+
+--- python-xstatic-jquery-1.7.2.0+dfsg1.orig/xstatic/pkg/jquery/__init__.py
++++ python-xstatic-jquery-1.7.2.0+dfsg1/xstatic/pkg/jquery/__init__.py
+@@ -46,19 +46,5 @@ LOCATIONS = {
+     # your relative path/filenames should usually be without version
+     # information, because either the base dir/url is exactly for this
+     # version or the mapping will care for accessing this version.
+-    ('google', 'http'): 'http://ajax.googleapis.com/ajax/libs/jquery/%s' % VERSION,
+-    ('google', 'https'): 'https://ajax.googleapis.com/ajax/libs/jquery/%s' % VERSION,
+-    ('jquery', 'http'): {
+-        'jquery.js': 'http://code.jquery.com/jquery-%s.js' % VERSION,
+-        'jquery.min.js': 'http://code.jquery.com/jquery-%s.min.js' % VERSION,
+-    },
+-    ('microsoft', 'http'): {
+-        'jquery.js': 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.js' % VERSION,
+-        'jquery.min.js': 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.min.js' % VERSION,
+-    },
+-    ('microsoft', 'https'): {
+-        'jquery.js': 'https://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.js' % VERSION,
+-        'jquery.min.js': 'https://ajax.aspnetcdn.com/ajax/jquery/jquery-%s.min.js' % VERSION,
+-    },
+ }
+ 
