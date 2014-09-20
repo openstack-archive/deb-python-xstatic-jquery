@@ -11,6 +11,7 @@ Build-Depends: debhelper (>= 9),
                python-setuptools,
                python3-all,
                python3-setuptools
+Build-Conflicts: python-xstatic, python3-xstatic
 Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-xstatic-jquery.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-xstatic-jquery.git
@@ -19,7 +20,7 @@ Homepage: http://jquery.com/
 Package: python-xstatic-jquery
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: libjs-jquery, ${misc:Depends}, ${python:Depends}
+Depends: python-xstatic, libjs-jquery, ${misc:Depends}, ${python:Depends}
 Description: jquery XStatic support - Python 2.x
  XStatic is a packaging standard to package external (often 3rd party) static
  files as a Python package, so they are easily usable on all operating systems,
@@ -47,7 +48,7 @@ Description: jquery XStatic support - Python 2.x
 Package: python3-xstatic-jquery
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: libjs-jquery, ${misc:Depends}, ${python3:Depends}
+Depends: python-xstatic, libjs-jquery, ${misc:Depends}, ${python3:Depends}
 Description: jquery XStatic support - Python 3.x
  XStatic is a packaging standard to package external (often 3rd party) static
  files as a Python package, so they are easily usable on all operating systems,
