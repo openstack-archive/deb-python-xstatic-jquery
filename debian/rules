@@ -18,6 +18,7 @@ override_dh_install:
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python3-xstatic-jquery; \
 	done
+	rm -f $(CURDIR)/debian/python*-xstatic-jquery/usr/lib/python*/dist-packages/*.pth
 
 override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
