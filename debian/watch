@@ -1,0 +1,3 @@
+version=3
+opts=dversionmangle=s/\+dfsg\+\d+$// \
+http://pypi.python.org/packages/source/X/XStatic-jQuery/ XStatic-jQuery-(.*).tar.gz

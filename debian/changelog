@@ -1,6 +1,7 @@
 python-xstatic-jquery (1.7.2.0+dfsg1-3) unstable; urgency=medium
 
   * Removes the .pth files from binary.
+  * Added a watch file.
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 01 Oct 2014 06:47:08 +0000
 
