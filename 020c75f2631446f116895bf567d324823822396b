@@ -1,0 +1,8 @@
+Code-Review+2: Thomas Goirand <thomas@goirand.fr>
+Workflow+1: Thomas Goirand <thomas@goirand.fr>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Fri, 09 Sep 2016 14:49:08 +0000
+Reviewed-on: https://review.openstack.org/368050
+Project: openstack/deb-python-xstatic-jquery
+Branch: refs/heads/debian/newton
