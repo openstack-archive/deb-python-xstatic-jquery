@@ -8,6 +8,8 @@ include /usr/share/openstack-pkg-tools/pkgos.make
 
 override_dh_auto_install:
 	pkgos-dh_auto_install
+	cp -auxf debian/data $(CURDIR)/debian/python-xstatic-jquery/usr/lib/python2.7/dist-packages/xstatic/pkg/jquery
+	cp -auxf debian/data $(CURDIR)/debian/python3-xstatic-jquery/usr/lib/python2.7/dist-packages/xstatic/pkg/jquery
 
 override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
